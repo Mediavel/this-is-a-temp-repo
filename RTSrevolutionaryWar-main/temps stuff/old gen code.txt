@@ -1,0 +1,609 @@
+
+let gameMap = {
+  name: "first map",
+  id: "first_map",
+  values: [],
+};
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function buildRandomMap() {
+  c = console.log;
+  cw = console.warn;
+  ce = console.error;
+  mapSize = 3500;
+  let i = 0;
+  let j = 0;
+
+  while (i < mapSize) {
+    let patchSize = getRandomInt(1, 5);
+    let randomTile = getRandomInt(1, 100);
+
+    if (i < mapSize) {
+      while (j <= patchSize) {
+        if (randomTile <= 95) {
+          gameMap.values.push("gG");
+          i++;
+        } else if (randomTile >= 97) {
+          gameMap.values.push("hG");
+          i++;
+        } else {
+          gameMap.values.push("wB");
+          i++;
+        }
+        //c(`this is the patch Size ${j}`);
+        j++;
+      }
+    }
+    //c(`this is the map Size ${i}`);
+    j = 0;
+  }
+}
+
+buildRandomMap();
+
+
+
+
+
+
+
+
+
+else if (lakeType == 3) {
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 70; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 68; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 67; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 67; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 68; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 70; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 72; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 70; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 68; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 67; i++) {
+      gameMap.values.push("gG");
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    if (riverSize == 2) {
+      for (let i = 0; i < lakeType + 67; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 68; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 2; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 70; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 72; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 70; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 2; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 68; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 67; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 67; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 68; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType + 2; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 70; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 72; i++) {
+        gameMap.values.push("gG");
+      }
+      for (let i = 0; i < lakeType; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 70; i++) {
+        gameMap.values.push("gG");
+      }
+    }
+
+
+let gameMap = {
+  name: "first map",
+  id: "first_map",
+  values: [],
+};
+
+let mapSize = 0;
+
+function buildRandomMap() {
+  c = console.log;
+  cw = console.warn;
+  ce = console.error;
+  wantedMapSize = 5000;
+
+  while (mapSize < wantedMapSize) {
+    let randomTile = getRandomInt(1, 101);
+
+    if (mapSize < wantedMapSize) {
+      if (randomTile <= 80) {
+        gameMap.values.push("gG");
+        mapSize++;
+      } else if (randomTile >= 95) {
+        generateForests();
+      } else if (randomTile >= 81 && randomTile <= 90) {
+        generateHighGround();
+      } else {
+        generateWater();
+      }
+      //c(`this is the patch Size ${j}`);
+    }
+    c(`this is the map Size ${mapSize}`);
+  }
+}
+buildRandomMap();
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+function generateWater() {
+  let lakeType = 4;
+  let riverSize = getRandomInt(1, 4);
+  lakeType = getRandomInt(3, 5);
+  //let randomTile = null;
+  //c(`This is the lake type ${lakeType}`);
+  if (lakeType == 4) {
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 94; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 92; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 91; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 91; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 92; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 94; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+  } else if (lakeType == 3) {
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 94; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 92; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 91; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 91; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 4; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 92; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType + 2; i++) {
+      gameMap.values.push("wB");
+    }
+    for (let i = 0; i < lakeType + 94; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    for (let i = 0; i < lakeType; i++) {
+      gameMap.values.push("wB");
+    }
+
+    for (let i = 0; i < lakeType + 97; i++) {
+      gameMap.values.push("gG");
+      mapSize++;
+    }
+    if (riverSize > 1) {
+      for (let i = 0; i < lakeType; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 94; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      for (let i = 0; i < lakeType + 2; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 92; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 91; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 91; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      for (let i = 0; i < lakeType + 4; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 92; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      for (let i = 0; i < lakeType + 2; i++) {
+        gameMap.values.push("wB");
+      }
+      for (let i = 0; i < lakeType + 94; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      for (let i = 0; i < lakeType; i++) {
+        gameMap.values.push("wB");
+      }
+
+      for (let i = 0; i < lakeType + 97; i++) {
+        gameMap.values.push("gG");
+        mapSize++;
+      }
+      if (riverSize > 2) {
+        for (let i = 0; i < lakeType; i++) {
+          gameMap.values.push("wB");
+        }
+        for (let i = 0; i < lakeType + 94; i++) {
+          gameMap.values.push("gG");
+          mapSize++;
+        }
+        for (let i = 0; i < lakeType + 2; i++) {
+          gameMap.values.push("wB");
+        }
+        for (let i = 0; i < lakeType + 92; i++) {
+          gameMap.values.push("gG");
+          mapSize++;
+        }
+        for (let i = 0; i < lakeType + 4; i++) {
+          gameMap.values.push("wB");
+        }
+        for (let i = 0; i < lakeType + 91; i++) {
+          gameMap.values.push("gG");
+          mapSize++;
+        }
+        for (let i = 0; i < lakeType + 4; i++) {
+          gameMap.values.push("wB");
+        }
+        for (let i = 0; i < lakeType + 91; i++) {
+          gameMap.values.push("gG");
+          mapSize++;
+        }
+        for (let i = 0; i < lakeType + 4; i++) {
+          gameMap.values.push("wB");
+        }
+        for (let i = 0; i < lakeType + 92; i++) {
+          gameMap.values.push("gG");
+          mapSize++;
+        }
+        for (let i = 0; i < lakeType + 2; i++) {
+          gameMap.values.push("wB");
+        }
+        for (let i = 0; i < lakeType + 94; i++) {
+          gameMap.values.push("gG");
+          mapSize++;
+        }
+        for (let i = 0; i < lakeType; i++) {
+          gameMap.values.push("wB");
+        }
+      }
+    }
+  }
+}
+
+function generateForests() {
+  forestSizeRandomness = getRandomInt(82, 90);
+  //forestSizeRandomness = 83;
+  forestSize = 5;
+
+  for (let i = 0; i < forestSize + 2; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 4; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 6; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 8; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 10; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 8; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 6; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 4; i++) {
+    gameMap.values.push("fG");
+  }
+  for (let i = 0; i < forestSize + forestSizeRandomness; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < forestSize + 2; i++) {
+    gameMap.values.push("fG");
+  }
+}
+
+function generateHighGround() {
+  let highGroundType = getRandomInt(1, 7);
+
+  for (let i = 0; i < highGroundType; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 66; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 4; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 70; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 8; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 70; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 8; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 65; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 8; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 62; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 8; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 63; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 8; i++) {
+    gameMap.values.push("hG");
+  }
+  for (let i = 0; i < highGroundType + 64; i++) {
+    gameMap.values.push("gG");
+    mapSize++;
+  }
+  for (let i = 0; i < highGroundType + 8; i++) {
+    gameMap.values.push("hG");
+  }
+}
+
